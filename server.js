@@ -19,7 +19,7 @@ const PORT = 5000;
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow requests from the React frontend
+  origin: 'https://image-generation-ni3g.vercel.app/', // Allow requests from the React frontend
   methods: ['GET', 'POST'], // Allow specific HTTP methods
   credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 })); // Enable CORS for all routes
